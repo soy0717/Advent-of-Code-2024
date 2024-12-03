@@ -5,4 +5,5 @@ def similarity_score(file):
     score = sum([i*l2.count(i) for i in l1])
     return score
 
-print(similarity_score(open('input.txt')))
+with open('day1\\input.txt') as f:
+    print(similarity_score(f))
