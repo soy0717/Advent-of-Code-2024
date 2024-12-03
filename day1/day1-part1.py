@@ -5,4 +5,5 @@ def distance(file):
     dist = sum([abs(l1[i] - l2[i]) for i in range(len(data))])
     return dist
 
-print(distance(open('input.txt')))
+with open('day1\\input.txt') as f:
+    print(distance(f))
