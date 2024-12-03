@@ -19,4 +19,5 @@ def safeOrUnsafe(file):
                     break
     return safe
 
-print(safeOrUnsafe(open('input.txt')))
+with open('day2\\input.txt') as f:
+    print(safeOrUnsafe(f))
